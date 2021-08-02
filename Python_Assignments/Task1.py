@@ -38,7 +38,7 @@ print(py_v2_input)
 # if not it will return 10+10
 
 # Taking input python version 3:
-py_v3_input = input("enter input here: ")
+py_v3_input = int(input("enter input here: "))
 print(py_v3_input)
 
 # 5. Write a program to complete the task given below:
@@ -46,8 +46,8 @@ print(py_v3_input)
 # Add the two numbers and keep the sum in another variable called z.
 # Add 30 to z and store the output in variable result and print result as the final output.
 
-user_input1 = input("enter any number between 1-10: ")
-user_input2 = input("enter other number between 1-10: ")
+user_input1 = int(input("enter any number between 1-10: "))
+user_input2 = int(input("enter other number between 1-10: "))
 z = user_input1 + user_input2
 result = z + 30
 print(result)
