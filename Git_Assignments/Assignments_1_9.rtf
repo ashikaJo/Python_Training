@@ -1,0 +1,507 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Bold;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset0 .AppleSystemUIFontMonospaced-RegularItalic;
+\f3\froman\fcharset0 Times-Italic;\f4\fnil\fcharset0 Menlo-Regular;\f5\fnil\fcharset0 .AppleSystemUIFontMonospaced-SemiboldItalic;
+}
+{\colortbl;\red255\green255\blue255;\red111\green213\blue70;\red255\green255\blue255;\red0\green0\blue0;
+\red27\green31\blue34;\red251\green2\blue7;\red0\green0\blue0;\red159\green160\blue28;\red46\green174\blue187;
+\red47\green180\blue29;\red180\green36\blue25;\red26\green26\blue26;}
+{\*\expandedcolortbl;;\cssrgb\c49412\c85098\c34118;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;
+\cssrgb\c14118\c16078\c18039;\cssrgb\c100000\c14913\c0;\csgray\c0;\cssrgb\c68468\c68012\c14208;\cssrgb\c20196\c73240\c78250;
+\cssrgb\c20238\c73898\c14947;\cssrgb\c76409\c21698\c12524;\csgray\c13536;}
+\margl1440\margr1440\vieww17740\viewh13560\viewkind0
+\deftab720
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b\fs37\fsmilli18667 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Exercise 1:  \cf4 \cb1 Create your first Commit
+\f1\b0 \
+
+\f0\b \cb3 Task: 
+\f1\b0\fs24 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\i\fs28 \cf5 \cb3  Initialize your Repository: git init project Exercise-1\
+ Create a file with name index.html\
+ Write code in newly created file\
+ Commit with message \'91Initial Message.\'92\
+\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\i0\b\fs37\fsmilli18667 \cf4 Solution:\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\i\b0\fs28 \cf5  $ git init \'93Exercise-1\'94\
+ $ cd Exercise-1\
+ $ touch index.html\
+ $ vi index.html \'97> press I for insert mode \'97> \'93This is the html file\'94 \'97> press esc :wq! for saving the changes in the file or do :wq for not saving the changes.\
+\pard\pardeftab720\partightenfactor0
+\cf5  $ git add \'93index.html\'94\
+ $ git commit -m \'93Initial Message.\'94\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf5 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\i0\b\fs37\fsmilli18667 \cf2 Exercise 2: \cf4 Commit only one file\
+Task:\
+\pard\pardeftab720\sl216\slmult1\partightenfactor0
+\cf4   
+\f2\i\b0\fs28 \cf5 Initialize your Repository: git init project Exercise-2.\
+ Create a files with name index.html and about.html\
+\pard\pardeftab720\partightenfactor0
+\cf5  Add code in both files\
+ Stage only one file.\
+ Commit with message \'91File x added.\'92\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\i0\b\fs37\fsmilli18600 \cf5 Solution:\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\i\b0\fs28 \cf5  $ git init \'93Exercise-2\'94\
+ $ cd Exercise-2 \
+ $ touch index.html about.html\
+\pard\pardeftab720\partightenfactor0
+\cf5  $ vi index.html \'97> press I for insert mode \'97> \'93This is the index html file\'94 \'97> pressed esc :wq! and saved the file.\
+ $ vi about.html \'97> press I for insert mode \'97> \'93This is the about html file\'94 \'97> pressed esc :wq! and saved the file.\
+\
+ $ git add \'93about.html\'94\
+ $ git commit -m \'93File about.html is added\'94\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\i0\b\fs37\fsmilli18600 \cf5 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\fs37\fsmilli18667 \cf2 Exercise 3: \cf4 Modify last Commit\
+Task:\
+\pard\pardeftab720\sl216\slmult1\partightenfactor0
+\cf4   
+\f2\i\b0\fs28 \cf5 Initialize your Repository: git init project Exercise-3.\
+ Create a files with name index.html \
+\pard\pardeftab720\partightenfactor0
+\cf5  Write code in newly created file\
+ Commit with message \'91adding index.html.\'92\
+ Add new about.html file with some code.\
+ Now modify message of previous commit as \'91Adding index.html and about.html\'92 and add about.html file in previous commit.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\i0\b\fs37\fsmilli18667 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs37\fsmilli18600 \cf5 Solution:\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\i\b0\fs28 \cf5  $$ git init \'93Exercise-3\'94\
+ $ cd Exercise-3\
+ $ touch index.html \
+\pard\pardeftab720\partightenfactor0
+\cf5  $ vi index.html \'97> press I for insert mode \'97> \'93This is the index html file for exercise 3\'94 \'97> pressed esc :wq! and saved the file.\
+\
+ $ git add \'93about.html\'94\
+ $ git commit -m \'93adding index.html\'94\
+\
+ $ touch about.html\
+ $ vi about.html \'97> press I for insert mode \'97> \'93This is the about html file for exercise 3\'94 \'97> pressed esc :wq! and saved the file.\
+\
+ $ git add \'93about.html\'94\
+ $ git commit \'97amend -m \'93Adding index.html and  about.html\'94\
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb1 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\i0\b\fs37\fsmilli18667 \cf2 \cb3 Exercise 4: \cf4 Create git ignore file\
+Task:\
+\pard\pardeftab720\partightenfactor0
+
+\f2\i\b0\fs28 \cf5  Initialize your Repository: git init project Exercise-4.\
+ Create a gitignore file that will ignore\
+    - all files with \'91exe\'92 extension\
+    - all files with \'91o\'92 extension\
+    - all files with \'91jar\'92 extension\
+    - the whole libraries directory\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\i0\b\fs37\fsmilli18600 \cf5 Solution:\
+\pard\pardeftab720\partightenfactor0
+
+\f2\i\b0\fs28 \cf5   \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf5  $ git init \'93Exercise-4\'94\
+ $ cd Exercise-4\
+ $ touch .gitignore\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf5 \cb1  $ vi .gitignore \'97-> press I \'97> \'93adding all the file extensions to ignore\'94\
+   *.exec\
+   *.o\
+   *.jar\
+\cf6    \cf4 **libraries/\cf6 \
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\i0\b\fs37\fsmilli18667 \cf2 \cb3 Exercise 5: \cf4 Save your work with stash \cf2 \
+\cf4 Task:\
+\pard\pardeftab720\partightenfactor0
+
+\f2\i\b0\fs28 \cf5  Initialize your Repository: git init project Exercise-5.\
+ Add some random files with code.\
+ Now use git stash command to save required files from above files.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\i0\b\fs37\fsmilli18600 \cf5 Solution:\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\i\b0\fs28 \cf5  $ git init \'93Exercise-5\'94\
+ $ cd Exercise-5\
+ $ touch file1.html file2.txt about.html index.html\
+ $ git stash\
+\pard\pardeftab720\partightenfactor0
+\cf5  $ git add file1.html\
+ $ git add file2.html\
+\
+ $ git stash\
+\
+ \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\i0\b\fs37\fsmilli18667 \cf2 Exercise 6: \cf4 Reset previous commit keeping changes (Soft Reset)\cf2 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf4 Task:\
+\pard\pardeftab720\partightenfactor0
+
+\f2\i\b0\fs28 \cf5  Initialize your Repository: git init project Exercise-6.\
+ Do some series of commits.\
+ Now use git reset command to reset one of the commit and keep changes in staging area.\
+\
+In answer also add output of git status command.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\i0\b\fs37\fsmilli18600 \cf5 Solution:\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\i\b0\fs28 \cf5  $ git init \'93Exercise-6\'94\
+ $ cd Exercise-6\
+ $ touch file1.html file2.txt about.html index.html\
+ $ git add \'93file1.html\'94\
+ $ git commit -m \'93added file1 in html format\'94\
+ $ git add \'93file2.txt\'94\
+ $ git commit -m \'93added file2 in txt format\'94\
+ $ git add \'93about.html\'94\
+ $ git commit -m \'93added about file\'94\
+ $ git add \'93index.html\'94\
+ $ git commit -m \'93added index file\'94\
+ \cf7 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 Ashikas-MacBook-Pro:Git_Assignments ashikarohit$ git log
+\f1\i0\fs24 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl216\slmult1\pardirnatural\qj\partightenfactor0
+\cf8 	
+\fs28 commit 7727d8f5111f8dc32418d0d813abd2daa63e4d72 (
+\f0\b \cf9 HEAD -> \cf10 main
+\f1\b0 \cf8 )\cf7 \
+	Author: ashikaJo <ashikajosh@gmail.com>\
+	Date:   Sun Aug 15 13:45:53 2021 -0700\
+\
+    	adding task6.txt\
+\
+\cf8 	commit b9900e6104ebf6f0eeed2074b16c6bfc11c790b4\cf7 \
+	Author: ashikaJo <ashikajosh@gmail.com>\
+	Date:   Sun Aug 15 13:45:37 2021 -0700\
+\
+    	adding task5.txt\
+\
+\cf8 	commit a5e465e7176523ba2e5d3ea843ced9102050d20c\cf7 \
+	Author: ashikaJo <ashikajosh@gmail.com>\
+	Date:   Sun Aug 15 13:45:20 2021 -0700\
+\
+    	adding task4.txt\
+\
+\cf8 	commit ed9d9ac8c7da0f1bedf8c3ce3f0d93a79ed7faa4 (
+\f0\b \cf11 origin/main
+\f1\b0 \cf8 , 
+\f0\b \cf11 origin/HEAD
+\f1\b0 \cf8 )\cf7 \
+	Merge: b7b10a5 2b93edf\
+	Author: ashikaJo <ashikajosh@gmail.com>\
+	Date:   Sun Aug 15 13:31:25 2021 -0700\
+\
+    	git assignments\
+    \
+    	Merge branch 'main' of https://github.com/ashikaJo/Python_Training\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl216\slmult1\pardirnatural\partightenfactor0
+\
+\cf8 	commit 042a1e6af58120214b5dac05dc208df522975e3b\cf7 \
+	Author: ashikaJo <88102598+ashikaJo@users.noreply.github.com>\
+	Date:   Sat Aug 14 14:55:03 2021 -0700
+\fs24 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qj\partightenfactor0
+\
+   
+\f2\i\fs28 Ashikas-MacBook-Pro:Git_Assignments ashikarohit$ git reset --soft 
+\fs22 a5e465e7176523ba2e5d3ea843ced9102050d20c\
+
+\f1\i0\fs24 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\i\fs28 \cf5 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1  $ git \cf7 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 status && git ls-files -s\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl216\slmult1\pardirnatural\partightenfactor0
+
+\f1\i0\fs24 	
+\fs28 100644 3d51157e9e5ebd95763b4644136afb892c5fc56e 0  task1.txt\
+	100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0 task2.txt\
+	100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0 task3.txt\
+	100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0 task4.txt\
+	100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0 task5.txt\
+	100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0 task6.txt\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\i\fs22 \
+
+\f3\fs24 \
+
+\f2\fs28  Ashikas-MacBook-Pro:Git_Assignments ashikarohit $ git log\
+
+\f1\i0\fs24 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl216\slmult1\pardirnatural\partightenfactor0
+\cf8 	
+\fs28 commit a5e465e7176523ba2e5d3ea843ced9102050d20c (
+\f0\b \cf9 HEAD -> \cf10 main
+\f1\b0 \cf8 )\cf7 \
+	Author: ashikaJo <ashikajosh@gmail.com>\
+	Date:   Sun Aug 15 13:45:20 2021 -0700\
+\
+    	adding task4.txt\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl216\slmult1\pardirnatural\partightenfactor0
+\cf8 	commit ed9d9ac8c7da0f1bedf8c3ce3f0d93a79ed7faa4 (
+\f0\b \cf11 origin/main
+\f1\b0 \cf8 , 
+\f0\b \cf11 origin/HEAD
+\f1\b0 \cf8 )\cf7 \
+	Merge: b7b10a5 2b93edf\
+	Author: ashikaJo <ashikajosh@gmail.com>\
+	Date:   Sun Aug 15 13:31:25 2021 -0700\
+\
+    	git assignments\
+    \
+    	Merge branch 'main' of https://github.com/ashikaJo/Python_Training
+\fs24 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b\fs37\fsmilli18667 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+Exercise 7: \cf4 Reset previous commit (Hard Reset)\cf2 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf4 Task:\
+\pard\pardeftab720\partightenfactor0
+
+\f2\i\b0\fs28 \cf5  Initialize your Repository: git init project Exercise-6.\
+ Do some series of commits.\
+ Use git reset command to reset one of the commit without keeping changes.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\i0\b\fs37\fsmilli18600 \cf5 Solution:\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\i\b0\fs28 \cf5  $ git init \'93Exercise-7\'94\
+ $ cd Exercise-7
+\f0\i0\b\fs37\fsmilli18667 \cf2 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\i\b0\fs28 \cf7 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 Ashikas-MacBook-Pro:Git_Assignments ashikarohit$ touch task4.txt task5.txt task6.txt\
+Ashikas-MacBook-Pro:Git_Assignments ashikarohit$ git add task4.txt \
+Ashikas-MacBook-Pro:Git_Assignments ashikarohit$ git commit -m "adding task4.txt"
+\f1\i0 \
+	[main a5e465e] adding task4.txt\
+ 	1 file changed, 0 insertions(+), 0 deletions(-)\
+ 	create mode 100644 Git_Assignments/task4.txt\
+
+\f2\i Ashikas-MacBook-Pro:Git_Assignments ashikarohit$ git add task5.txt \
+Ashikas-MacBook-Pro:Git_Assignments ashikarohit$ git commit -m "adding task5.txt"
+\f1\i0 \
+	[main b9900e6] adding task5.txt\
+ 	1 file changed, 0 insertions(+), 0 deletions(-)\
+ 	create mode 100644 Git_Assignments/task5.txt\
+
+\f2\i Ashikas-MacBook-Pro:Git_Assignments ashikarohit$ git add task6.txt \
+Ashikas-MacBook-Pro:Git_Assignments ashikarohit$ git commit -m "adding task6.txt"
+\f1\i0 \
+	[main 7727d8f] adding task6.txt\
+ 	1 file changed, 0 insertions(+), 0 deletions(-)\
+ 	create mode 100644 Git_Assignments/task6.txt\
+\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\i\fs36 \cf12 \cb3 \expnd0\expndtw0\kerning0
+\ul \ulc12 \CocoaLigature1 Output:
+\f1\i0\fs28 \cf7 \cb1 \kerning1\expnd0\expndtw0 \ulnone \CocoaLigature0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\i Ashikas-MacBook-Pro:Git_Assignments ashikarohit$ vi task6.txt\
+Ashikas-MacBook-Pro:Git_Assignments ashikarohit$ cat task6.txt 
+\f1\i0 \
+	trying out git reset --Hard\
+
+\f2\i Ashikas-MacBook-Pro:Git_Assignments ashikarohit$ git reset --hard
+\f1\i0 \
+	HEAD is now at 7727d8f adding task6.txt\
+
+\f2\i Ashikas-MacBook-Pro:Git_Assignments ashikarohit$ cat task6.txt \
+Ashikas-MacBook-Pro:Git_Assignments ashikarohit$ ls
+\f1\i0 \
+	task1.txt	 task2.txt   task3.txt	  task4.txt	   task5.txt    task6.txt
+\f4\fs22 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b\fs37\fsmilli18667 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+Exercise 8: \cf4 Merge branch (No conflicts)\cf2 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf4 Task:\
+\pard\pardeftab720\partightenfactor0
+
+\f2\i\b0\fs28 \cf5  Initialize your Repository: git init project Exercise-8.\
+ Create index.html file and add some code.\
+ Make commit. \
+ Create new branch from master branch with name 
+\f5\b my-feature
+\f2\b0 .\
+ Add about-us.html with code and commit changes in my-feature branch.\
+ Now checkout master branch.\
+ Merge my-feature branch into master.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\i0\b\fs37\fsmilli18600 \cf5 Solution:\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\i\b0\fs28 \cf5  $ git init \'93Exercise-8\'94\
+ $ cd Exercise-8\
+ $ touch index.html \
+\pard\pardeftab720\partightenfactor0
+\cf5  $ vi index.html \'97> press I for insert mode \'97> \'93This is the index html file \'94 \'97> pressed esc :wq! and saved the file.\
+\
+ $ git add \'93index.html\'94\
+ \
+ $ git commit -m \'93adding index file\'94\
+\
+ $ git checkout -b my-feature\
+\
+ $ touch about-us.html\
+\
+ $ vi about-us.html \'97> press I for insert mode \'97> \'93This is the about-us html file \'94 \'97> pressed esc :wq! and saved the file.\
+\
+ $ git add \'93about-us.html\'94\
+\
+ $ git commit -m \'93adding about-us html file under my-feature branch \'93\
+\
+ $ git checkout main\
+\
+ $ git merge my-feature \
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\i0\b\fs37\fsmilli18667 \cf2 \
+Exercise 9: \cf4 Merge branch (Conflicts)\cf2 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf4 Task:\
+\pard\pardeftab720\partightenfactor0
+
+\f2\i\b0\fs28 \cf5  Initialize your Repository: git init project Exercise-9.\
+ Create index.html file and add some code.\
+ Make commit. \
+ Create new branch from master branch with name 
+\f5\b \cf5 my-feature
+\f2\b0 \cf5 .\
+ Add about-us.html with code.\
+ Make changes in index.html\
+ Commit changes in my-feature branch.\
+ Now checkout master branch.\
+ Do some code changes in index.html\
+ Commit changes.\
+ Now merge my-feature branch into master.\
+ You will get conflicts for index.html. Resolve conflicts by selecting both changes for the same index.html file
+\f0\i0\b\fs37\fsmilli18667 \cf2 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs37\fsmilli18600 \cf5 Solution:\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\i\b0\fs28 \cf5  $ git init \'93Exercise-9\'94\
+ $ cd Exercise-9\
+ $ touch index.html \
+\pard\pardeftab720\partightenfactor0
+\cf5  $ vi index.html \'97> press I for insert mode \'97> \'93This is the index html file \'94 \'97> pressed esc :wq! and saved the file.\
+\
+ $ git add \'93index.html\'94\
+ \
+ $ git commit -m \'93adding index file\'94\
+\
+ $ git checkout -b my-feature\
+\
+ $ touch about-us.html\
+\
+ $ vi about-us.html \'97> press I for insert mode \'97> \'93This is the about-us html file \'94 \'97> pressed esc :wq! and saved the file.\
+\
+ $ vi index.html \'97> press I for insert mode \'97> \'93Edited index file in my-feature branch, to cause conflict \'94 \'97> press esc :wq! and saved the  changes made inside the file.\
+\
+ $ git commit -m \'93adding about-us html file and made changes to index file in my-feature branch\'94\
+\
+ $ git checkout main\
+\
+ $ vi index.html \'97> press I for insert mode \'97> \'93Edited the index file again in main branch\'94 \'97> press esc :wq! and saved the  changes made inside the file.\
+\
+ $ git commit -m \'93 made changes to index file in main branch\'94\
+\
+ $ git merge my-feature\
+\
+ Conflict (content): Merge_conflict in index.html\
+ Automatic merge failed; fix conflicts and then commit the results\
+\
+
+\f5\b \ul  To resolve the conflict:\
+\
+ 
+\f2\b0 \ulnone $ cat index.html\
+ <<<<<<< HEAD\
+ Edited the index file again in main branch \
+ =======\
+ Edited index file in my-feature branch, to cause conflict\
+ >>>>>>> my_feature\
+ 
+\f5\b \ul \
+ 
+\f2\b0 \ulnone $ vi index.html \'97> press I for insert mode \'97> \'93 Edited the index file again in main branch, Edited index file in my-feature branch, to cause conflict, Edited the index file again in main branch to fix the conflict and removed unwanted text from the file\'94 \'97> pressed esc :wq! and saved the changes made inside the file.\
+\
+ $ git commit -m \'93 merged and resolved the conflict in index.html file\'94 \
+\
+ Conflict Resolved.\
+ \
+\
+\
+\
+ \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\i0\b\fs37\fsmilli18600 \cf5 \
+}
